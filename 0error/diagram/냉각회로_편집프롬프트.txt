@@ -30,3 +30,19 @@ E. Keep tank → pump 1 downward arrow and catch-can connection unchanged.
 
 After editing the center radiator 2 has exactly TWO blue coolant ports: TOP RIGHT receives coolant from radiator 1, and LOWER LEFT sends coolant to pump 2. Right radiator 1 has exactly TWO ports: BOTTOM RIGHT receives from controller, TOP LEFT sends to radiator 2. Pump 2 lies only in the return path from radiator 2 to tank. There is only one serial loop, no parallel bypasses or radiator self-loops. NO text changes, no new elements.
 
+
+3차 편집 — 2026-09-30: 유량계 전선·커넥터 제거 및 크기 축소
+사용 도구: 내장 image_gen 이미지 편집
+요청: 전선만 제거하는 직전 요청을 대체합니다. 전선 3가닥과 흰색 커넥터를 제거하고, 유량계 몸체를 약 65% 크기를 목표로 축소합니다. 펌프 1 → 유량계 → 모터 연결, 유량계 라벨과 지시선, 나머지 구성을 보존합니다.
+출력: /home/user/Project/0error/diagram/냉각회로_수정.png (덮어쓰기)
+
+편집 프롬프트:
+Use case: precise-object-edit. Make a very small LOCAL edit to the supplied 1630x965 Korean cooling-system diagram. Edit ONLY the black inline flow meter between pump 1 and the motor, around x=720,y=630, and its dangling wires/plug beneath it. Keep the rest of the image unchanged.
+
+1) Completely REMOVE the three red/yellow/black electrical wires and the small white electrical connector dangling down-right from the flow meter. Remove any shadows cast by those removed wires and plug. Fill their former location seamlessly with the original pale gray background.
+2) SHRINK the black flow meter body to approximately 65% of its current width and height (linear dimensions, clearly smaller). It should look like a compact inline pipe accessory proportional to the pipe bore, rather than a large pump-sized part. Retain its recognizable black plastic round body and small circular top label. Maintain its central position and angle along the pipe between pump 1 and the motor. Keep BOTH ends connected: extend the existing transparent pipe and blue fittings naturally into its smaller opposing ports to close the gaps. Do not shrink the pipes, pump, motor, or any other object. Preserve flow direction arrows pump 1 → flow meter → motor.
+3) Keep the bold Korean label "유량계" in exactly the same position and size. Retain its thin black diagonal leader line, adjusting only its upper endpoint as necessary so it clearly points to the now smaller flow meter body. Do NOT mistake the leader line for a wire. No electrical wires or connector should remain.
+4) Seamlessly restore gray background and appropriate soft local shadows in all vacated areas.
+
+Strict invariants: same title, all Korean words and numerals, every label and its placement, other leader lines, tank, catch can, two pumps, motor, controller, two radiators, all other coolant pipes and arrows and blue fittings, composition, camera, original gray background, 3D rendering style, dimensions and crop. Do not redraw/rearrange the diagram. Do not add anything. Only shrink this one sensor, remove its wires and plug, and locally repair its two pipe connections and label pointer.
+
