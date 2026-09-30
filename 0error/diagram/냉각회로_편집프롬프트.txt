@@ -1,0 +1,32 @@
+사용 도구: 내장 image_gen 이미지 편집
+최종 이미지: 냉각회로_수정.png
+
+1차 편집 프롬프트
+
+Use case: precise-object-edit / compositing.
+Edit image 1, the supplied Korean 3D cooling-loop diagram. Image 2 is ONLY the reference for a small inline Hall-effect water flow sensor. Produce a polished edited raster diagram for a presentation slide, preserving the original wide aspect ratio around 1344x796, original isometric 3D technical-render style, pale gray background, transparent pipes, blue fittings, pipe flow arrows, soft shadows, bold black Korean labels and title.
+
+Make these exact corrections:
+1. Swap radiator labels without exchanging their physical positions: the radiator at the center-back (originally "라디에이터 1") must now read "라디에이터 2"; the radiator on the far right (originally "라디에이터 2") must now read "라디에이터 1".
+2. Physically REMOVE pump 2 from its original position between pump 1 and the motor. MOVE this same pump to the return pipe BETWEEN the OUTLET of the NEW center-back radiator 2 and the reserve tank. Show one unambiguous continuous transparent pipe running from the center-back radiator 2 outlet into pump 2 inlet, and another from pump 2 outlet into the reserve tank. Flow arrows MUST show "center-back radiator 2 → pump 2 → reserve tank". Place moved pump 2 in the open middle area above pump 1, between the tank and the center-back radiator, so its connections are visually traceable. Label it "펌프 2" with a clean leader line. Do NOT leave another pump at its old position.
+3. In the vacated pipe segment BETWEEN pump 1 and the motor insert ONE flow meter matching image 2, connected inline at BOTH ends: small BLACK PLASTIC YF-S201-style body with round top, opposed threaded hose fittings, three thin red/yellow/black electrical leads ending in a small white connector. Adapt this part to the diagram's 3D rendering, scale and perspective; do not paste in a photo rectangle. Clearly label it "유량계". Pipe arrows here must show "펌프 1 → 유량계 → 모터". The sensor wires are separate from the transparent coolant pipes.
+4. The large transparent reserve tank has a correct upper "리저브" label but an erroneous lower "캐치캔" label. Correct the lower label to "리저브". Keep the far-left small metal catch can and its "캐치캔" label unchanged. There must be only ONE object labeled "캐치캔".
+5. Keep title exactly "통합 냉각 및 제어 시스템 다이어그램". Keep labels "펌프 1", "모터", "컨트롤러", and all other component appearance intact.
+
+Hydraulic clarity is essential: keep all original major components, exactly TWO radiators, TWO pumps, ONE motor, ONE controller, ONE reserve tank, ONE catch can, plus the ONE new flow sensor. Maintain a clear closed coolant path with no bypass around the newly inserted sensor or moved pump: reserve tank → pump 1 → flow meter → motor → controller → right radiator 1 → center-back radiator 2 → pump 2 → reserve tank. Reroute only pipes needed to make those connections. Do not route radiator 2 straight back into the tank bypassing pump 2. Do not leave phantom duplicate pipes or dead ends from the old pump placement. Avoid lines crossing labels, preserve legibility at slide size, and do not add other captions, legend, logos, components or decorative elements.
+
+2차 배관 및 화살표 교정 프롬프트 (최종)
+
+Edit this generated cooling diagram ONLY to correct coolant plumbing and arrow directions. Preserve ALL Korean labels, title, current object placement, black flow meter with 3 wires, two pumps, two radiators, reserve tank, catch can, motor, controller, gray background, transparent pipes, blue fittings and 3D rendering exactly.
+
+CRITICAL: every coolant device has just one inlet and one outlet. Current pump 2 has three connections: it must have TWO. The desired circulation is tank → pump 1 → flow meter → motor → controller → right radiator 1 → center radiator 2 → pump 2 → tank.
+
+Make these local edits:
+A. DELETE the entire EXTRA transparent hose from the RIGHT REAR of pump 2 going upward to the TOP LEFT of center radiator 2. Delete that top-left radiator blue port and make the radiator edge plain. Remove the deleted pump rear blue port; render its rear as a plain motor housing. Keep the lower existing pipe from the LOWER LEFT outlet of center radiator 2 to the FRONT SIDE connection of pump 2, arrow pointing LEFT toward pump 2. Keep existing pipe between LEFT side of pump 2 and the tank, but REVERSE its arrow to point LEFT into the tank. This must show radiator 2 → pump 2 → reserve. No third pipe or bypass.
+B. Keep pipes between pump 1, flow meter and motor, but REVERSE the current left-pointing arrows. They must point RIGHT from pump 1 through flow meter INTO motor.
+C. DELETE the redundant piping from the RIGHT SIDE of center radiator 2 that loops down and travels across the middle-right floor to the controller's upper/back port. Remove that entire bypass, its blue ports at the radiator, and the unused controller upper/back fitting. Do not leave dangling pipes. Keep controller's FRONT RIGHT port and its continuous outer pipe to the BOTTOM RIGHT port of right radiator 1. Reverse arrow on this outer pipe so it points from controller toward radiator 1, to the RIGHT and UP.
+D. Keep the existing upper arch pipe joining the TOP LEFT of right radiator 1 to the TOP RIGHT of center radiator 2. REVERSE its arrow to point LEFT from right radiator 1 into center radiator 2.
+E. Keep tank → pump 1 downward arrow and catch-can connection unchanged.
+
+After editing the center radiator 2 has exactly TWO blue coolant ports: TOP RIGHT receives coolant from radiator 1, and LOWER LEFT sends coolant to pump 2. Right radiator 1 has exactly TWO ports: BOTTOM RIGHT receives from controller, TOP LEFT sends to radiator 2. Pump 2 lies only in the return path from radiator 2 to tank. There is only one serial loop, no parallel bypasses or radiator self-loops. NO text changes, no new elements.
+
