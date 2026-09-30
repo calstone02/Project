@@ -61,3 +61,12 @@ Use case: precise-object-edit. Edit the supplied Korean 3D cooling-loop diagram 
 
 INVARIANTS: same canvas/framing around 1630x965, full title exactly "통합 냉각 및 제어 시스템 다이어그램", single upper "리저브", labels "캐치캔", "펌프 1", "펌프 2", "유량계", "모터", "컨트롤러", "라디에이터 1", "라디에이터 2" unchanged in wording and bold black type. Keep BOTH radiators, pump 2, motor, controller, catch can in their original positions and sizes. Preserve center radiator 2 → pump 2 → tank and all other existing circuit routes and flow arrows. Preserve gray background, transparent coolant hoses, blue fittings, isometric 3D technical render style, soft shadows. No extra components, labels, wires or pipes. Only shrink the tank, remove the lower duplicate tank label, and bring pump 1/flow meter closer to the motor with shorter intervening hoses.
 
+
+---
+[Claude 직접 편집 · 픽셀 합성, 생성 모델 미사용]
+요청: 유량계 양쪽 배관을 더 짧게.
+- 펌프 1(라벨 포함)을 배관 축을 따라 (40, 16)px, 유량계(라벨 포함)를 (6, 3)px 모터 쪽으로 이동
+- 펌프 1 → 유량계 배관 약 48px → 약 12px, 유량계 → 모터 배관 약 17px → 약 10px
+- 두 짧은 배관의 흐름 화살표는 들어갈 자리가 없어 뺐음(무늬 없는 배관으로 다시 그림)
+- 펌프 1이 옮겨 간 만큼 리저브 → 펌프 1 입구 배관을 늘림(펌프 2 배관의 단면을 떼어 늘여 붙임), 입구의 양방향 화살표는 새 배관 가운데로 옮김
+- 지운 자리는 배경 모델 + 보간으로 채움
